@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5rem;
+}
+
+main {
+    background-color: #FFCD9E;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.section-1 {
+    /* border: 2px solid black; */
+    width: 45vw;
+    padding: 1.5rem;
+}
+
+.para-1 {
+    color: #553e3e;
+    margin: 30px auto;
+}
+
+.input-text {
+    width: 22rem;
+    padding: 10px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button{
+    width: 8.5rem;
+    padding: 10px;
+    background-color: #282828;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto 16px;
+}
+
+.para-2  {
+    margin: auto 25px;
+    color: white;
+}
+
+.section-2 img {
+    /* border: 2px solid black; */
+    width: 30vw;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-1{
+        width: 50vw;
+    }
+    .input-text {
+        width: 21.5rem;
+    }
+    button{
+        width: 7rem;
+    }
+    .section-2{
+        width: 40vw;
+    }
+    .section-2 img{
+        width: 40vw;
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .section-1 {
+        width: 90vw;
+    }
+    .input-text {
+        width: 26rem;
+    }
+    button{
+        width: 11rem;
+    }    
+    .section-2 {
+        width: 90vw;
+        padding: 0 12rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        flex-direction: column;
+    }
+    .section-1 {
+        width: 90vw;
+    }
+    .input-text {
+        width: 20rem;
+    }
+    button{
+        width: 20rem;
+    }
+    .section-2 {
+        width: 90vw;
+        padding: 0 2rem;
+    }
+    .section-2 img{
+        width: 70vw;
+    }
+    .ul-right li{
+        float: left;
+    }
+}
+
+footer {
+    background-color: #282828;
+    padding: 1.5rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+.ul-right li{
+    text-align: right;
+}
+
+ul li img {
+    height: 24px;
+}
